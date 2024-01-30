@@ -16,3 +16,5 @@ The Artificial Intelligence and Machine Learning (AI/ML) Analysis Working Group 
 - [Manuscript Code](Manuscript_Code)
 - [Working Code](Working_Code)
 - [AI/ML Space Biology References](AI-ML_Space_Biology_References)
+- [AI/ML Ongoing Projects](https://docs.google.com/document/d/1w4LVCzjeeye4qoChmHLxATLQiW16bklNB6ALnDF5NjM/edit#heading=h.95b7h6a5lge5)
+- [AI/ML Completed Projects](https://docs.google.com/document/d/1iA0UJjUotrVwS8un7ObpIKc4jnVXbeHVgx2sw3iS0OI/edit#heading=h.skv70enopj64)

@@ -1,14 +1,14 @@
 ### Install and import modules in Google Colab
 ```
-pip install numpy
-pip install pandas
-pip install -U -q PyDrive
-pip install scanpy
+!pip install numpy
+!pip install pandas
+!pip install -U -q PyDrive
+!pip install scanpy
 
-pip install gseapy
-pip install pydeseq2
-pip install pybiomart
-pip install mygene
+!pip install gseapy
+!pip install pydeseq2
+!pip install pybiomart
+!pip install mygene
 ```
 
 ### Local python environment SETUP

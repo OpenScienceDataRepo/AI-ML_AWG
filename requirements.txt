@@ -1,0 +1,5 @@
+pandas
+requests
+openpyxl
+scikit-learn==1.6.0
+skimpy==0.0.16

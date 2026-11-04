@@ -1,0 +1,56 @@
+group,parameter,value,kind,source,note
+simulator,age_mean,46.9,reported,Pardon 2022,n=31
+simulator,age_sd,6.0,reported,Pardon 2022,
+simulator,p_male,0.81,reported,Pardon 2022; Carter 2026,"25/31, 35/43"
+simulator,mission_days_mean,190,derived,Carter 2026; Pardon 2022,"198±55, 214±72 d"
+simulator,mission_days_sd,45,derived,Carter 2026,clipped 120-365
+simulator,p_prior_flight,0.55,reported,Pardon 2022,17/31
+simulator,cup_volume_mean,0.167,reported,Pardon 2022,"mm^3, range 0-0.841"
+simulator,cup_volume_sd,0.184,derived,Pardon 2022,SE 0.033 x sqrt(31)
+simulator,rho_cup_ode,-0.45,assumption,Pardon 2022,"direction from paper, strength mine"
+simulator,p_mtrr66_risk_allele,0.5,assumption,population estimate,approx; verify in gnomAD
+simulator,p_shmt1_1420_risk_allele,0.65,assumption,population estimate,approx; verify in gnomAD
+simulator,rho_genetic_ode,0.2,assumption,Zwart 2019; Brunstetter 2024,"flight effect size unknown, kept small"
+simulator,dtrt_lognorm_mu,3.618,derived,Brunstetter 2023; Macias 2020,
+simulator,dtrt_lognorm_sigma,0.607,derived,Brunstetter 2023; Macias 2020,
+simulator,dtrt_shift,-10.0,assumption,modelling choice,allows ~0 change
+simulator,dtrt_tau_days,25.0,assumption,Macias 2020; Carter 2026,rise time constant
+simulator,dtrt_tau_logsd,0.3,assumption,modelling choice,person-to-person spread
+simulator,oct_noise_sd_um,7.0,derived,Pardon 2022,19.4 = 1.96*sqrt(2)*SD
+simulator,target_prev_ode20,0.64,reported,Brunstetter 2023,dTRT >= 20
+simulator,target_prev_folds,0.15,reported,Brunstetter 2023,
+simulator,target_prev_gf,0.26,reported,Brunstetter 2023,
+simulator,target_prev_hyperopic,0.14,reported,Brunstetter 2023,>= +0.75 D
+simulator,target_prev_ode55,0.18,derived,Macias 2020; Valencia 2023,16-19% clinically relevant
+simulator,p_frisen_given_dtrt55,0.6,assumption,Valencia 2023,tuned to ~17% overall
+simulator,p_frisen_given_dtrt20,0.15,assumption,Valencia 2023,
+simulator,p_frisen_given_low,0.02,assumption,Valencia 2023,
+simulator,p_folds_if_ode,0.24,reported,Ferguson 2023,10/42 eyes
+simulator,p_folds_if_no_ode,0.05,derived,Ferguson 2023,2/~30 eyes
+simulator,p_macular_given_folds,0.67,reported,Ferguson 2023,4/6 crew
+simulator,p_distortion_given_macular,0.15,assumption,none,not reported; placeholder
+simulator,p_gf_if_ode,0.34,assumption,Brunstetter 2023,tuned to 26%
+simulator,p_gf_if_no_ode,0.12,assumption,Brunstetter 2023,tuned to 26%
+simulator,p_gf_moderate,0.3,assumption,none,not reported; placeholder
+simulator,refr_shift_base_mean,0.1,derived,Pardon 2022,-0.41 -> -0.21 D
+simulator,refr_shift_base_sd,0.26,assumption,Brunstetter 2023,tuned to 14%
+simulator,refr_shift_gf_mean,0.55,assumption,Mader 2011,extra shift with GF
+simulator,refr_shift_gf_sd,0.35,assumption,Mader 2011,range +0.5 to +1.75
+simulator,p_vf_loss_if_dtrt100,0.25,assumption,none,not reported; placeholder
+simulator,p_symptom_base,0.45,assumption,Mader 2011,~60% report blur
+simulator,p_symptom_if_shift,0.85,assumption,Mader 2011,if shift >= +0.5 D
+simulator,p_report,0.8,assumption,CDSS meeting 25 Sep,under-reporting
+simulator,iop_pre_mean,14.4,reported,Greenwald 2021,mmHg
+simulator,iop_pre_sd,2.5,assumption,general population,
+simulator,iop_inflight_delta,1.3,reported,Greenwald 2021,mmHg
+simulator,choroid_pre_mean,213.3,reported,Pardon 2022,um
+simulator,choroid_pre_sd,61.8,derived,Pardon 2022,SE 11.1 x sqrt(31)
+simulator,choroid_delta_mean,35.0,reported,Greenwald 2021; Macias 2020,um
+simulator,co2_mmhg_mean,2.8,reported,Macias 2020,
+triage,dtrt_earliest_um,20,reported,Brunstetter 2023; Gew 2026,Tier 1
+triage,dtrt_concerning_um,55,reported,Brunstetter 2023; Gew 2026,Tier 2
+triage,hyperopic_shift_D,0.75,reported,Brunstetter 2023,Tier 1
+triage,beyond_correction_D,1.75,assumption,Mader 2011,placeholder for 'beyond correction'
+triage,fd30_progression_um,29,reported,Carter 2026,FD30 flag
+triage,fd30_window_days,"(20, 40)",derived,Macias 2020,FD30 ±10 d
+triage,routine_exam_days,"(30, 90, 'R-30')",reported,Gew 2026,

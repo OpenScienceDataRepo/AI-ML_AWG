@@ -1,0 +1,5 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+outputs/vignette_answer_key_DO_NOT_SHARE.csv
+outputs/*.html
